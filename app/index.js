@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     res.end('Hello, Jenkins Freestyle Project!\n');
 });
 
-server.listen(3000, '127.0.0.1', () => {
-    console.log('Server running at http://127.0.0.1:3000/');
+server.listen(3000, '0.0.0.0', () => {
+    console.log('Server running at http://0.0.0.0:3000/');
 });
 
